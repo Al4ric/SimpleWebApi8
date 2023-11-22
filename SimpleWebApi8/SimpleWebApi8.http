@@ -1,0 +1,6 @@
+@SimpleWebApi8_HostAddress = http://localhost:5080
+
+GET {{SimpleWebApi8_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
