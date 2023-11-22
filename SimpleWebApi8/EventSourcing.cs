@@ -48,8 +48,8 @@ public class Device(string name, Guid id)
 {
     public Guid Id { get; set; } = id;
     public string Name { get; private set; } = name;
-    private int Volume { get; set; }
-    private bool Muted { get; set; }
+    public int Volume { get; set; }
+    public bool Muted { get; set; }
 
     public void Apply(VolumeChanged newVolume) => Volume = newVolume.Volume;
     public void Apply(MuteToggled muteToggled) => Muted = muteToggled.Muted;
