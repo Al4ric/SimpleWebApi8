@@ -73,5 +73,5 @@ public class WebAppTest : IClassFixture<CustomWebAppFactory<Program>>
         Assert.Equal(myThing.Tags, retrievedMyThing?.Tags);
         Assert.Equal(myThing.Picture, retrievedMyThing?.Picture);
         Assert.Equal(myThing.Place, retrievedMyThing?.Place);
-    }
+}
 }
