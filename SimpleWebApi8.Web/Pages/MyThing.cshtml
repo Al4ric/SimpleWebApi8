@@ -1,0 +1,24 @@
+@page
+@model SimpleWebApi8.Web.Pages.MyThingModel
+
+<h2>Create My Thing</h2>
+
+<form method="post">
+    <label for="name">Name:</label>
+    <input id="name" name="Name" />
+
+    <label for="description">Description:</label>
+    <input id="description" name="Description" />
+
+    <!-- Add more fields for other properties of MyThing -->
+
+    <button type="submit">Create</button>
+</form>
+
+@if (Model.MyThing != null)
+{
+    <h2>@Model.MyThing.Name</h2>
+    <p>@Model.MyThing.Description</p>
+
+    <!-- Display other properties of MyThing -->
+}
